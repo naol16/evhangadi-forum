@@ -1,0 +1,45 @@
+header{
+    background-color:white;
+    position:sticky;
+    top:0;
+
+
+
+}
+
+.headerwarpper{
+height:10vh;
+display:flex;
+align-items: center;
+justify-content: center;
+gap:20vw;
+}
+.image{
+    font-size: 2rem;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem
+}
+.texts{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:3rem;
+    
+}
+.signin button{
+    border:none;
+    background-color:#315cf7;
+    border-radius: 5px;
+
+    width:170px;
+    font-size: 1rem;
+    
+    height:50px;
+    color:white;
+    text-align: center;
+    
+}
+

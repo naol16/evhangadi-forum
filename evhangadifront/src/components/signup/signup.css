@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-image: url('../../assets/bg.svg');
+    background-color: white;
+    background-repeat: no-repeat;
+    height:100%;
+    font-family: "Roboto", sans-serif;;
+}
+.mainwarpper{
+    margin-top: 2rem;
+    display: flex;
+    margin-left:200px;
+    gap:5px;
+    object-fit: cover;
+
+}
+.card{
+    width:600px;
+    height:600px;
+    
+    border-radius: 5px ;
+    text-align: center;
+    margin:auto o;
+    
+    background-color:white;
+    box-shadow: 5px 5px 20px -4px  rgba(0, 0, 0,0.3); 
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+
+}
+
+.card h1{
+    padding-top: 25%;
+    font-size:1.2rem;
+    padding-bottom:1.5rem;
+    font-weight: 500;
+}
+
+.card p{
+    font-size: 0.9rem;
+    margin-bottom: 4rem;
+    
+}
+.card a{
+    
+    color:rgb(218, 112, 15)
+}
+.card a:hover{
+    color: rgb(218,112,15,0.2);
+}
+
+.form1{
+    width:500px;
+    height:6vh;
+
+}
+.form1 .input1{
+    width:90%;
+    height:100%;
+    margin-bottom:4vh;
+    margin-left:2vw;
+    
+}
+.input3{
+    width:50%;
+    margin-left:5vw;
+    margin-bottom:4vh;
+}
+.input2{
+    border:none;
+    background-color: rgb(218, 112, 15);
+    border-radius: 5px;
+    width:165px;
+    color:white;
+    height:40px;
+
+}
+.newaccount{
+    margin-top:2vh;
+}
+.newcreate{
+    margin-bottom: 50vh;
+}
+.description{
+    margin-right:15rem;
+    margin-top: 6rem;
+}
+.description a{
+    color:rgb(218,112,15);
+    
+}
+.description h1{
+    padding-top: 5vh;
+}
+.description p{
+    padding-bottom: 5rem;
+}
+.btn3{
+    text-align: center;
+    color:white;
+    border: 5px;
+    width:165px;
+    background-color: rgb(218, 112, 15);
+    height:40px;
+    margin-bottom: 5rem;
+}
