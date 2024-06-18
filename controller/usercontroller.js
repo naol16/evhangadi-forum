@@ -58,7 +58,7 @@ async function login(req, res) {
     const user_name = rows[0].username;
     const user_id=rows[0].userid
     const token=jwt.sign({user_name,user_id},"webifay",{expiresIn:"2d"});
-    return res.status(200).json({msg:token})
+    return res.status(200).json({token})
 
     //    }
     //   else{
@@ -69,8 +69,11 @@ async function login(req, res) {
   }
 }
 
-function checked(req, res) {
-  res.send("checked");
+async function checked(req, res) {
+  username=req.user.user_name
+  userid=req.user.user_id
+
+  res.send({msg:"checked",username,userid});
 }
 
 module.exports = { register, login, checked };
