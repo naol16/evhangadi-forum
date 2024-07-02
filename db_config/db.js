@@ -1,20 +1,21 @@
-
-require("dotenv").config();
 const express = require("express");
 const mysql = require("mysql2/promise"); 
 const app = express();
+const path = require('path');
+const dotenv = require('dotenv');
+
+// Assuming the parent directory is one level up from the current file
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const port = process.env.PORT || 7000;
-const { DB_HOST, DB_USER, DB_PASSWORD, DATABASE } = process.env;
 
 const database = mysql.createPool({
-    host: "localhost",
-   user:"root",
-    password:"",
-    database:"evanghadiforum",
-
-
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'evanghadiforum'
 });
+
 (async () => {
     try {
         const connection = await database.getConnection();
@@ -34,3 +35,5 @@ app.listen(port, (err) => {
 });
 
 module.exports = database;
+
+

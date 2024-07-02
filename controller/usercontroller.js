@@ -56,9 +56,11 @@ async function login(req, res) {
       return res.status(400).json({ msg: "incorrect user name or password" });
     }
     const user_name = rows[0].username;
-    const user_id=rows[0].userid
-    const token=jwt.sign({user_name,user_id},"webifay",{expiresIn:"2d"});
-    return res.status(200).json({token})
+    const user_id = rows[0].userid;
+    const token = jwt.sign({ user_name, user_id }, "webifay", {
+      expiresIn: "2d",
+    });
+    return res.status(200).json({ token });
 
     //    }
     //   else{
@@ -70,10 +72,10 @@ async function login(req, res) {
 }
 
 async function checked(req, res) {
-  username=req.user.user_name
-  userid=req.user.user_id
+  username = req.user.user_name;
+  userid = req.user.user_id;
 
-  res.send({msg:"checked",username,userid});
+  res.send({ msg: "checked", username, userid });
 }
 
 module.exports = { register, login, checked };

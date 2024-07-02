@@ -9,11 +9,11 @@ import Evangadilogo from "../../assets/newlogo.png"
 function Footer() {
   return (
     <>
-      <div class="footer">
-        <div class="allwarper">
-          <div class="logo">
+      <div className="footer">
+        <div className="allwarper">
+          <div className="logo">
             <img  src={Evangadilogo}  width="100px"></img>
-            <div class="icon">
+            <div className="icon">
               <div><FacebookIcon/></div>
               <div><InstagramIcon/></div>
               <div><YouTubeIcon/></div>
@@ -23,25 +23,25 @@ function Footer() {
           <div>
 
           </div>
-          <div class="usefull">
-            <p class="title">
+          <div className="usefull">
+            <p className="title">
                 useful Link
             </p>
             <li><a href="#">how it works</a></li>
             <li><a href="#">terms of services</a></li>
             <li><a href="#">privacy policy</a></li>
           </div>
-          <div class="info">
-            <p  class="title">
+          <div className="info">
+            <p  className="title">
                 contact info
             </p>
-            <p class="small">
+            <p className="small">
                 evhangadi networks
             </p>
-            <p class="small">
+            <p className="small">
                 support@evhangadi.com
             </p>
-            <p class="small">
+            <p className="small">
                 +1-202-386-2702
             </p>
           </div>

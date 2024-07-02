@@ -14,9 +14,13 @@
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.19",
     "@mui/material": "^5.15.19",
+    "axios": "^1.7.2",
     "express": "^4.19.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.23.1",
+    "remixicon": "^4.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

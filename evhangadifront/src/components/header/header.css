@@ -29,8 +29,10 @@ gap:20vw;
     gap:3rem;
     
 }
-.signin button{
+.signin button {
     border:none;
+    text-decoration: none;
+    list-style:None;
     background-color:#315cf7;
     border-radius: 5px;
 
