@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .hol {
+    background-color: #eeeaea;
+    padding-bottom: 400px;
+  }
+  .generaly {
+    width: 70vw;
+    margin-left: 202px;
+  }
+  .question {
+    padding-top: 18px;
+    border-bottom: 1px solid #cec5c5;
+    padding-right: 400px;
+  }
+  .both {
+    display: flex;
+  }
+  .both button {
+    margin-top: 15px;
+    padding: 5px;
+    width: 5rem;
+    margin-left: 20px;
+    border: none;
+    border-radius: 3px;
+    background: rgb(53, 126, 235);
+    color: #fff;
+  }
+  .siglequestion {
+    border-bottom: 2px solid #cec5c5;
+    width: 65vw;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: #b1adad;
+    border-bottom: 2px solid orange;
+  }
+  .siglequestion:hover {
+    transform: scale(1.1);
+  }
+  .btn {
+    padding: 20px;
+    margin-left: 48vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn button {
+    padding: 3px 15px;
+    border: none;
+    background: #fff;
+    font-size: medium;
+  }
+  .btn button:not(:last-child) {
+    color: #d49644;
+  }
+  .btn button:not(:first-child) {
+    color: rgb(90, 2, 2);
+  }
+  .student {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #cec5c5;
+    width: 65vw;
+    border-top: 2px solid #cec5c5;
+    background-image: linear-gradient(to right, rgb(253, 83, 16), rgb(0, 0, 0));
+    background-clip: text;
+    color: transparent;
+    padding: 8px 0;
+  }
+  .answerlist {
+    width: 65vw;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: #b1adad;
+    border-bottom: 2px solid orange;
+    display: flex;
+  }
+  .answerlist:hover {
+    transform: scale(1.1);
+  }
+  .icon {
+    display: flex;
+  }
+  .arrow {
+    color: rgb(2, 2, 66);
+  }
+  .profile {
+    margin-top: 35px;
+    color: rgb(68, 85, 115);
+  }
+  .icon h2 {
+    margin-left: 18px;
+    font-size: 40px;
+    color: rgb(68, 85, 115);
+  }
+  textarea {
+    width: 90%;
+    margin-left: 2.5rem;
+    border: 1px solid rgb(151, 150, 150);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+  
+    border-bottom: 2px solid orange;
+  }
+  
+  button {
+    padding: 10px 30px;
+    margin: 5px 0 20px 50px;
+    background: rgb(53, 126, 235);
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  button:hover {
+    background: rgb(245, 108, 34);
+  }
+  .icon h3 {
+    margin-top: 35px;
+    display: inline-block;
+    margin-left: 18px;
+    color: rgb(57, 56, 56);
+  }
+  .icon p {
+    margin-left: 18px;
+    color: gray;
+  }
+  .your {
+    background-image: linear-gradient(to right, rgb(253, 83, 16), rgb(0, 0, 0));
+    background-clip: text;
+    color: transparent;
+  }
+  h5 {
+    color: rgb(4, 4, 93);
+    font-size: 15px;
+    padding: 0;
+    text-align: end;
+    margin: -30px 10px 10px 0;
+  }
+  .like h5 {
+    text-align: center;
+  }
+  .answer {
+    margin: 20px 0 0 20px;
+  }
+  .no {
+    width: 65vw;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: #b1adad;
+    border-bottom: 2px solid orange;
+  }
+  .no:hover {
+    transform: scale(1.1);
+  }
+  .no img {
+    height: 60px;
+    margin-left: 20px;
+  }

@@ -1,9 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect ,useContext} from "react";
 import "./askquestion.css"
-// import Layout from "../../Components/Layout/Layout";
 import axiosUrl from "../../axiosConfig";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
+import { context } from "../../App";
 function Askquestion() {
+   const { user }=useContext(context)
   const navigate = useNavigate();
   const title = useRef();
   const description = useRef();
@@ -17,13 +18,17 @@ function Askquestion() {
     }
     
     try {
+      const token=localStorage.getItem("token");
       const askload = {
         title: titlevalue,
         description: descriptionvalue,
+        userid:user.userid
       };
-      await axiosUrl.post("/question/askquestion", askload);
+      const data=await axiosUrl.post("/question/askquestion", askload, {headers: {
+        Authorization: `Bearer ${token}`,
+      }});
       alert("Question asked");
-      navigate("/Home", { msg: "you have poste new queston" });
+      navigate("/Home", { msg: "you have posted new queston" });
     } catch (error) {}
   }
   return (

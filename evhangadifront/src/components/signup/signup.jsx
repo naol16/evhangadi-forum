@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./signup.css";
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axiosUrl from "../../axiosConfig";
+import { context } from "../../App";
 
 function Signup() {
+  useContext(context)
   const navigate=useNavigate();
   const username = useRef();
   const firstname = useRef();

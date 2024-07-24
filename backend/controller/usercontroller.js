@@ -60,7 +60,9 @@ async function login(req, res) {
     const token = jwt.sign({ user_name, user_id }, "webifay", {
       expiresIn: "2d",
     });
-    return res.status(200).json({msg:"user login successfully", token, user_name});
+    return res
+      .status(200)
+      .json({ msg: "user login successfully", token, user_name });
 
     //    }
     //   else{

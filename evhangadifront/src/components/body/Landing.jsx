@@ -1,11 +1,13 @@
 import React from 'react'
 import "./landingpage.css"
-import { useState ,useRef,use} from 'react'
+import { useState ,useRef,useContext} from 'react'
 import { Link,useNavigate } from 'react-router-dom'
 import axiosUrl from '../../axiosConfig'
+import { context } from '../../App'
 
 
 function Signin() {
+  useContext(context)
   const navigate=useNavigate()
  const useemail=useRef()
  const  usepassword=useRef();
@@ -24,9 +26,9 @@ function Signin() {
       alert("login succesfull. please Home");
       console.log(data);
 
-      // localStorage.setItem("token", data.token);
+      localStorage.setItem("token", data.token);
 
-        navigate("/Home");
+         navigate("/Home");
     } catch (error) {
       console.log(error);
       alert("some thing wrong");

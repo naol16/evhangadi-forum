@@ -17,10 +17,10 @@ async function allquestion(req, res) {
 async function questions(req, res) {
   try {
     const userid = req.user.user_id;
-     console.log(userid);
+    console.log(userid);
     const question = req.body.title;
     const description = req.body.description;
-    const tag ="gtdrdr";
+    const tag = "gtdrdr";
     if (!question || !description) {
       res
         .status(400)
